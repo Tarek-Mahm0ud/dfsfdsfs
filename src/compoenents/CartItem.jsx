@@ -1,6 +1,6 @@
 
 export default function CartItem({ item, setCart, cart }) {
-    const { id, name, quantity , image , price} = item;
+    const { id, title, quantity , image , price} = item;
 
     const increaseQunatity = () => {
         const newCart = cart.map((el) => {
@@ -33,7 +33,7 @@ export default function CartItem({ item, setCart, cart }) {
         <>
             <div className="cartItem">
                 <img src={image} alt="photo" width="300" height="300" />
-                <div>{name}</div>
+                <div>{title}</div>
                 {' '}
                 <div>Quantity: {quantity}</div>
                 {' '}

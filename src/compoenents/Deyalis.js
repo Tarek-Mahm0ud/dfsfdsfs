@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
 
-function Deyalis({ card }){
+function Deyalis(){
     const { id } = useParams();
     const menu_url = "https://fakestoreapi.com/products";
     const [pizza_list,setpizza] = useState(null);
@@ -9,29 +9,29 @@ function Deyalis({ card }){
 
     const addToCartHandler = () => {
         const cart = JSON.parse(localStorage.getItem('cart')) || [];
-        const found = cart.filter((el) => el.id === id);
+        const found = cart.filter((el) => el.id === pizza_list.id);
     
         if (found.length !== 0)
           cart.forEach((el) => {
-            if (el.id === id) el.quantity++;
+            if (el.id === pizza_list.id) el.quantity++;
           })
         else {
-          cart.push({ ...card, quantity: 1 });
+          cart.push({ ...pizza_list, quantity: 1 });
         }
     
         localStorage.setItem('cart', JSON.stringify(cart));
-      }
+    }
 
 
-      useEffect(() => {
-        fetch(`${menu_url}/${id}`)
-          .then((res) => res.json())
-          .then((data) => setpizza(data));
-      }, [id]);
+    useEffect(() => {
+      fetch(`${menu_url}/${id}`)
+        .then((res) => res.json())
+        .then((data) => setpizza(data));
+    }, [id]);
 
-      if (!pizza_list) {
-        return <div>Loading...</div>;
-      }
+    if (!pizza_list) {
+      return <div>Loading...</div>;
+    }
 
     return(
         <>

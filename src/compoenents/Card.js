@@ -28,9 +28,7 @@ function Card({ card }) {
           <img src={card.image} alt="photo" width="300" height="300" />
         </div>
         <div className="info">
-          <h3>{card.name}</h3>
-          <p>
-            {card.topping}</p>
+          <h3>{card.title}</h3>
           <h4 className="price">{card.price}</h4>
           {/* <button className="order"><a href="/#" class="new-customer" style = "text-decoration: none; color : white">Order</a></button> */}
           <button className="btn btn-primary" onClick={addToCartHandler}>order</button>

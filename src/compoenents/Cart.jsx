@@ -4,14 +4,17 @@ import { useState, useEffect } from 'react';
 import Image1 from '../images/bg_4.jpg';
 
 export default function Cart() {
+
   const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) || []);
   const [showForm, setShowForm] = useState(false);
   const [totalPrice, setTotalPrice] = useState(0);
 
+  
   const handleCheckout = () => {
     calculateTotalPrice();
     setShowForm(true);
   };
+
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -21,9 +24,11 @@ export default function Cart() {
     localStorage.setItem('cart', JSON.stringify([]));
   };
 
+
   const handleCloseForm = () => {
     setShowForm(false);
   };
+
 
   const calculateTotalPrice = () => {
     var total =0; 
