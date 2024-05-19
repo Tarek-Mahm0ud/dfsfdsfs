@@ -1,0 +1,29 @@
+
+
+
+.card {
+	background-color: transparent;
+	width: 21.25em;
+	box-shadow: 0 5px 25px rgba(1, 1, 1, 15);
+	border-radius: 10px;
+	/* border: 10px white; */
+	padding: 25px;
+	margin: 15px;
+	transition: 0.7s ease;
+  }
+  .card:hover {
+	transform: scale(1.1); /*get larger 1.1 times*/
+  }
+  .info {
+	color: black;
+	font-size: 1em;
+	text-align: center;
+  }
+  
+  .order {
+	font-size: 26px;
+	color: white;
+	border-radius: 10%;
+	/* border: white; */
+	background-color: transparent;
+  }

@@ -1,0 +1,46 @@
+{
+  "products": 
+   [
+    {
+        "id": 1,
+        "category": "Pizza",
+        "name": "Vesuvius",
+        "topping": [
+            "Tomat", "Ost", "Skinka"
+        ],
+        "img": "https://i.pinimg.com/474x/8c/5d/fd/8c5dfdde574d6432aafe244c0cdced00.jpg",
+        "price": 79,
+        "rank": 3
+    },
+    {
+        "id": 2,
+        "category": "Pizza",
+        "name": "Hawaii",
+        "topping": [
+            "Tomat", "Ost", "Skinka", "Ananas"
+        ],
+        "img": "https://i.pinimg.com/236x/e0/c5/b5/e0c5b5ee8e4c56894a8550da6c789d73.jpg",
+        "price": 79,
+        "rank": 1
+    },
+    {
+        "id": 3,
+        "category": "Pizza",
+        "name": "Parma",
+        "topping": [
+            "Tomat", "Ost", "Parmaskinka", "Oliver", "Färska basilika"
+        ],
+        "img": "https://cdn.discordapp.com/attachments/1086024170825068694/1241008235658608680/0a34c17ac88f93878b0d3253ffd39e1f.png?ex=6648a27c&is=664750fc&hm=2f4415cdc395153a15354a5c1315d5435312ed9513b776cafb0261b712b991f3&",
+        "price": 89,
+        "rank": 2
+    },
+    {
+        "id": 4,
+        "category": "Dryck",
+        "name": "Coca-cola, 33cl",
+        "img": "https://cdn.discordapp.com/attachments/1086024170825068694/1241008253471817768/6f3470ee4f6877102b42a35bb04cfa2a.png?ex=6648a280&is=66475100&hm=d843d29c6af2f46f5b71d129e254a171029ae0183d10bd960c8a28370a0e08d2&",
+        "price": 10
+    }
+]
+  
+}

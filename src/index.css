@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+header {
+  background-color: black;
+  width: 100%;
+  position: fixed; /*to make the header fixed when scrolling*/
+  z-index: 999;
+  display: flex;
+  justify-content: space-between; /*space between elements*/
+  align-items: center; /*center the elements*/
+  padding: 10px 200px;
+}
+nav a {
+  text-align: center;
+  text-decoration: none;
+  color: aliceblue;
+  padding-left: 10px;
+}
+.logo {
+  text-decoration: none;
+  font-size: 1.8em; /*make the font relative to body size*/
+  font-weight: 700; /*طخن الخط*/
+  color: azure;
+}
+nav a:hover {
+  color: gold;
+}
+.logo1 {
+  color: gold;
+}
+.home {
+  width: 100%;
+  min-height: 100vh; /*تحديد اقل طول ممكن توصله*/ /*vh view port */
+  display: flex;
+  align-items: center;
+  /* background: url(Pizza-3007395.jpg) no-repeat; */
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  padding-left: 20px;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+.cards {
+  /* background-color: black; */
+}
+.text h3 {
+  color: aliceblue;
+}
+.text p {
+  color: gray;
+}
+.social-icon {
+  display: flex;
+  justify-content: space-between;
+}
+.social-animate {
+  padding-right: 20px;
+  list-style: none;
+}
+.no-gutters {
+  display: flex;
+}
+.home {
+  padding-top: 20px;
+  background: url(images/bg_4.jpg) no-repeat;
+}
+.home-text {
+  color: gray;
+  font-size: 1em;
+  line-height: 20pt;
+  padding-left: 10px;
+}
+.welcom-segment {
+  color: aliceblue;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+}
+.menue {
+  width: 100%;
+  min-height: 100vh;
+  background: url(images/bg_4.jpg) repeat;
+  /* background-color: black; */
+}
+.title1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: gold;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: row; /*تحدد الايتمز جم بعض*/
+  /* flex-wrap: wrap; علشان لما اصغر الكروت تنزل تحت بعض */
+}
+.card {
+  background-color: transparent;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 15);
+  border-radius: 10px;
+  /* border: 10px white; */
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+.card:hover {
+  transform: scale(1.1); /*get larger 1.1 times*/
+}
+.info {
+  color: white;
+  font-size: 1em;
+  text-align: center;
+}
+
+.order {
+  font-size: 26px;
+  color: white;
+  border-radius: 10%;
+  /* border: white; */
+  background-color: transparent;
+}
+.services1 {
+  width: 100%;
+  min-height: 100vh;
+  background: url(images/bg_3.jpg) no-repeat;
+}
+.services h1 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  padding-top: 25%;
+}
+.ser-info {
+  width: 100%;
+  min-height: 100vh;
+  background: url(images/food.png);
+  text-align: center;
+}
+.ser-info h2 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.ser {
+  padding-top: 200px;
+  display: flex;
+  list-style: none;
+  padding-right: 20px;
+}
+.ser li i {
+  padding-bottom: 10px;
+}
+.ser li p {
+  font-size: 22px;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+.contact-info1 {
+  background-color: black;
+}
+.phon {
+  display: flex;
+  list-style: none;
+  padding-left: 50px;
+  padding-right: 30px;
+}
+.phon li {
+  padding-right: 40px;
+  padding: 20px;
+}
+.phon h3 {
+  color: white;
+}
+.phon p {
+  color: gray;
+}
+.contact-info2 {
+  width: 610px;
+  height: 150px;
+  background-color: rgba(255, 217, 0, 0.6);
+  text-align: center;
+}
+.social-icon {
+  padding-top: 50px;
+  padding-right: 40px;
+  padding-left: 30px;
+}

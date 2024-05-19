@@ -1,0 +1,33 @@
+.menue {
+	width: 100%;
+	min-height: 100vh;
+	background: url(../images/bg_4.jpg) repeat;
+	/* background-color: black; */
+	display: flex;
+	/* position: absolute; */
+   } 
+  .title1 {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: gold;
+	font-size: 2.2em;
+	font-weight: 800;
+	margin-bottom: 30px;
+	padding-top: 30px;
+  }
+  .cards {
+	display: flex;
+	justify-content: center;
+	flex-direction: row; 
+	color:black;
+	display: flex;
+  } 
+
+.order {
+	font-size: 26px;
+	color: white;
+	border-radius: 10%;
+	/* border: white; */
+	background-color: transparent;
+  }
